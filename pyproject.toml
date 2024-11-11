@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gym-franka"
+version = "0.2.0"
+
+description = "Gymnasium Interface for the Franka Emika Panda Robot Arm"
+readme = "README.md"
+requires-python = ">=3.10"
+
+license = {file = "LICENSE.txt"}
+
+keywords = ["Reinforcement Learning", "Artificial Intelligence", "Robotics"]
+
+authors = [
+    {name = "Ruihan Zhao", email = "ruihan.zhao@utexas.edu"}
+]
+
+maintainers = [
+    {name = "Ruihan Zhao", email = "ruihan.zhao@utexas.edu"}
+]
+
+dependencies = [
+    "gymnasium==1.0.0",
+    "websockets==13.1",
+    "scipy==1.14.1",
+]
+
+# [project.optional-dependencies]
+# dev = ["check-manifest"]
+# test = ["coverage"]
+
+[project.urls]
+"Homepage" = "https://philipzrh.com/lane/"
+
+# [project.scripts]
+# example = "examples/sample:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
